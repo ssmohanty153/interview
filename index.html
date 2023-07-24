@@ -1,0 +1,21 @@
+<script>
+    class ParentCalss {
+        Age = 10;
+        constructor() {
+            document.write("this a prent class <br>")
+        }
+    }
+    class ChildrenClass extends ParentCalss {
+        constructor() {
+            super();// It is mandatory to call super class in derived class
+            document.write("this a child class")
+        }
+        print() {
+            document.write(`parent class age is ${super.Age}`)
+        }
+    }
+
+
+    let obj = new ChildrenClass();
+    obj.print()
+</script>
